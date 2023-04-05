@@ -1,0 +1,22 @@
+2023-04-05 20:23:36.551613+01:00 Script Start 
+2023-04-05 20:23:37.500461+01:00 Guessed Red 
+2023-04-05 20:23:37.511459+01:00 Current Guess 
+['red'] 
+2023-04-05 20:23:37.823774+01:00 Guessed green 
+2023-04-05 20:23:37.832776+01:00 Current Guess 
+['red', 'green'] 
+2023-04-05 20:23:38.151772+01:00 Guessed Blue 
+2023-04-05 20:23:38.160776+01:00 Current Guess 
+['red', 'green', 'blue'] 
+2023-04-05 20:23:38.663883+01:00 Guessed Purple 
+2023-04-05 20:23:38.683486+01:00 Current Guess 
+['red', 'green', 'blue', 'purple'] 
+2023-04-05 20:23:38.692491+01:00 Win 
+2023-04-05 20:23:48.706466+01:00 name 'wrongt' is not defined 
+2023-04-05 20:23:49.259816+01:00 Win 
+2023-04-05 20:23:59.272453+01:00 name 'wrongt' is not defined 
+2023-04-05 20:23:59.822719+01:00 Win 
+2023-04-05 20:24:09.836191+01:00 name 'wrongt' is not defined 
+2023-04-05 20:24:09.905508+01:00 Guessed Purple 
+2023-04-05 20:24:09.932511+01:00 Current Guess 
+['red', 'green', 'blue', 'purple', 'purple'] 
