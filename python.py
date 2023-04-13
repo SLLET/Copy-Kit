@@ -3,6 +3,8 @@
 import tkinter as tk
 import datetime
 import time
+from pythonosc import udp_client
+from pythonosc import osc_message_builder
 
 def now():
     return datetime.datetime.now().astimezone()
@@ -22,6 +24,12 @@ def pw(*text):
     print(pout)
 
 pw("Script Start")
+
+def send_osc(message, address="192.168.2.10", port=53000):
+    client = udp_client.SimpleUDPClient(address, port)
+    msg = osc_message_builder.OscMessageBuilder(address = message)
+    msg = msg.build()
+    client.send(msg)
 
 def alivetime():
     global scriptstart
@@ -105,6 +113,7 @@ def win():
     wint2.place(relx=0.5, rely=0.9, anchor='center')
     infoL.destroy()
     infoR.destroy()
+    send_osc('/cue/{11}/go')
 
 def loop():
     if guess[-4:] == ['red','green','blue','purple']:
