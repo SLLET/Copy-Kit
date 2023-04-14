@@ -1,0 +1,19 @@
+2023-04-14 12:55:37.034482+01:00 Script Start 
+2023-04-14 12:55:40.747791+01:00 Guessed Purple 
+2023-04-14 12:55:40.798078+01:00 Current Guess 
+['purple'] 
+2023-04-14 12:55:41.260805+01:00 Guessed green 
+2023-04-14 12:55:41.321860+01:00 Current Guess 
+['purple', 'green'] 
+2023-04-14 12:55:41.740749+01:00 Guessed Blue 
+2023-04-14 12:55:41.751305+01:00 Current Guess 
+['purple', 'green', 'blue'] 
+2023-04-14 12:55:42.212547+01:00 Guessed Orange 
+2023-04-14 12:55:42.223572+01:00 Current Guess 
+['purple', 'green', 'blue', 'orange'] 
+2023-04-14 12:55:42.620740+01:00 Guessed White 
+2023-04-14 12:55:42.656029+01:00 Current Guess 
+['purple', 'green', 'blue', 'orange', 'white'] 
+2023-04-14 12:55:43.200803+01:00 Guessed Red 
+2023-04-14 12:55:43.211707+01:00 Current Guess 
+['purple', 'green', 'blue', 'orange', 'white', 'red'] 
