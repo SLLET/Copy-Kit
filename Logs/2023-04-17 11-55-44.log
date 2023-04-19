@@ -1,0 +1,89 @@
+2023-04-17 11:55:44.717229+01:00 Script Start 
+2023-04-17 11:57:22.499016+01:00 Lights Triggered 
+2023-04-17 11:57:44.445810+01:00 Guessed Purple 
+2023-04-17 11:57:44.446823+01:00 Current Guess 
+['purple'] 
+2023-04-17 11:57:58.806822+01:00 Guessed Red 
+2023-04-17 11:57:58.806822+01:00 Current Guess 
+['purple', 'red'] 
+2023-04-17 11:58:00.201838+01:00 Guessed Red 
+2023-04-17 11:58:00.202832+01:00 Current Guess 
+['purple', 'red', 'red'] 
+2023-04-17 11:58:00.773989+01:00 Guessed green 
+2023-04-17 11:58:00.774990+01:00 Current Guess 
+['purple', 'red', 'red', 'green'] 
+2023-04-17 11:58:01.511008+01:00 Guessed Orange 
+2023-04-17 11:58:01.511008+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange'] 
+2023-04-17 11:58:02.070067+01:00 Guessed White 
+2023-04-17 11:58:02.071077+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white'] 
+2023-04-17 11:58:02.763438+01:00 Guessed Blue 
+2023-04-17 11:58:02.763438+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue'] 
+2023-04-17 11:58:05.102854+01:00 Guessed Orange 
+2023-04-17 11:58:05.103854+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange'] 
+2023-04-17 11:58:06.013824+01:00 Lights Triggered 
+2023-04-17 11:59:24.598360+01:00 Lights Triggered 
+2023-04-17 11:59:45.778837+01:00 Guessed Purple 
+2023-04-17 11:59:45.779837+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple'] 
+2023-04-17 11:59:57.186703+01:00 Lights Triggered 
+2023-04-17 12:00:20.122766+01:00 Lights Triggered 
+2023-04-17 12:00:41.878706+01:00 Guessed Purple 
+2023-04-17 12:00:41.879722+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple'] 
+2023-04-17 12:00:42.703673+01:00 Guessed green 
+2023-04-17 12:00:42.703673+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green'] 
+2023-04-17 12:00:43.214701+01:00 Guessed Orange 
+2023-04-17 12:00:43.215703+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange'] 
+2023-04-17 12:00:43.862950+01:00 Guessed White 
+2023-04-17 12:00:43.863949+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white'] 
+2023-04-17 12:00:44.647093+01:00 Guessed Red 
+2023-04-17 12:00:44.648098+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red'] 
+2023-04-17 12:00:46.878776+01:00 Lights Triggered 
+2023-04-17 12:01:08.170733+01:00 Lights Triggered 
+2023-04-17 12:01:22.710357+01:00 Guessed Red 
+2023-04-17 12:01:22.711347+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red'] 
+2023-04-17 12:01:22.716347+01:00 Guessed White 
+2023-04-17 12:01:22.717347+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white'] 
+2023-04-17 12:01:33.603711+01:00 Lights Triggered 
+2023-04-17 12:01:48.140382+01:00 Guessed Purple 
+2023-04-17 12:01:48.141382+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white', 'purple'] 
+2023-04-17 12:01:49.134822+01:00 Guessed green 
+2023-04-17 12:01:49.135822+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white', 'purple', 'green'] 
+2023-04-17 12:01:53.750688+01:00 Guessed Red 
+2023-04-17 12:01:53.751689+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white', 'purple', 'green', 'red'] 
+2023-04-17 12:02:08.427768+01:00 Lights Triggered 
+2023-04-17 12:02:37.908209+01:00 Lights Triggered 
+2023-04-17 12:03:00.432071+01:00 Lights Triggered 
+2023-04-17 12:03:26.827772+01:00 Lights Triggered 
+2023-04-17 12:03:54.655667+01:00 Guessed Purple 
+2023-04-17 12:03:54.656663+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white', 'purple', 'green', 'red', 'purple'] 
+2023-04-17 12:03:57.768523+01:00 Guessed green 
+2023-04-17 12:03:57.769536+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white', 'purple', 'green', 'red', 'purple', 'green'] 
+2023-04-17 12:03:59.867560+01:00 Guessed Blue 
+2023-04-17 12:03:59.868554+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white', 'purple', 'green', 'red', 'purple', 'green', 'blue'] 
+2023-04-17 12:04:01.439529+01:00 Guessed Orange 
+2023-04-17 12:04:01.440531+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white', 'purple', 'green', 'red', 'purple', 'green', 'blue', 'orange'] 
+2023-04-17 12:04:01.967753+01:00 Guessed White 
+2023-04-17 12:04:01.968755+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white', 'purple', 'green', 'red', 'purple', 'green', 'blue', 'orange', 'white'] 
+2023-04-17 12:04:02.615516+01:00 Guessed Red 
+2023-04-17 12:04:02.616517+01:00 Current Guess 
+['purple', 'red', 'red', 'green', 'orange', 'white', 'blue', 'orange', 'purple', 'purple', 'green', 'orange', 'white', 'red', 'red', 'white', 'purple', 'green', 'red', 'purple', 'green', 'blue', 'orange', 'white', 'red'] 
+2023-04-17 12:04:02.840962+01:00 Win 

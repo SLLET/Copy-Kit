@@ -6,6 +6,7 @@ import time
 from pythonosc import udp_client
 from pythonosc import osc_message_builder
 from threading import Thread
+import vlc
 
 def now():
     return datetime.datetime.now().astimezone()
@@ -25,19 +26,7 @@ def pw(*text):
     print(pout)
 
 pw("Script Start")
-
-def blank():
-    blank = tk.Tk()
-    width,height=1920,1080 # set the variables 
-    d=str(width)+"x"+str(height)
-    width,height=1920,1080 # set the variables
-    blank.geometry(d)
-    blank.configure(bg='#000000')
-    blank.title("Blank")
-    blank.attributes("-fullscreen", True)
-    blank.mainloop()
-
-Thread(target=blank).start()
+win_state = False
 
 def send_osc(message, address="192.168.2.10", port=53000):
     client = udp_client.SimpleUDPClient(address, port)
@@ -47,7 +36,13 @@ def send_osc(message, address="192.168.2.10", port=53000):
 
 def light():
     pw("Lights Triggered")
+    send_osc('/cue/{16.5}/stop')
+    send_osc('/cue/{17.5}/stop')
+    send_osc('/cue/{17}/stop')
+    time.sleep(1)
     send_osc('/cue/{17}/go')
+    time.sleep(13.5)
+    send_osc('/cue/{16.5}/go')
 
 def alivetime():
     global scriptstart
@@ -97,22 +92,26 @@ def white():
 def win():
         global wint
         pw("Win")
-        wint = tk.Label(text=" Congratulations! ",bg="#000000",fg="magenta",font=("Flood std", 90,  'bold'))
-        wint2 = tk.Label(text=" It's not Kit, so who is trying to kill Jon? ",bg="#000000",fg="white",font=("Montserrat", 40,  'bold'))
+        win_state = True
+        wint = tk.Label(task_window, text=" Congratulations! ",bg="#000000",fg="magenta",font=("Flood std", 90,  'bold'))
+        wint2 = tk.Label(task_window, text=" It's not Kit, so who is trying to kill Jon? ",bg="#000000",fg="white",font=("Montserrat", 40,  'bold'))
         wint.place(relx=0.5, rely=0.7, anchor='center')
         wint2.place(relx=0.5, rely=0.9, anchor='center')
         infoL.destroy()
         infoR.destroy()
+        send_osc('/cue/{16.5}/stop')
+        send_osc('/cue/{17}/stop')
+        send_osc('/cue/{17.5}/stop')
         send_osc('/cue/{18}/go')
 
 def loop():
     if guess[-6:] == ['purple','green','blue','orange','white','red']:
         win()
-        return
+        task_window.destroy()
     else:
         pass
-    welcome.after(500,loop)
-
+        welcome.after(500,loop)
+        
 def runTask():
     global red
     global green
@@ -152,35 +151,12 @@ def runTask():
     white = tk.Button(buttons, background="white", height=scale, width=2*scale, command=white).grid(row=1,column=2, padx=scale, pady=scale)
     buttons.place(relx=0.5, rely=0.7, anchor='center')
 
-    lights = tk.Button(text="Lights!",bg="#000000",fg="white",font=("Montserrat", 20,  'bold'), command=light)
-    lights.place(relx=0.9, rely=0.1, anchor='e')
-    
+    lights = tk.Button(text="Clue",bg="red",fg="white",font=("Montserrat", 40,  'bold'), command=light)
+    lights.place(relx=0.99, rely=0.01, anchor='ne')
+    task_window.focus()
     task_window.attributes("-fullscreen", True)
+    
     loop()
     task_window.mainloop()
 
-from pythonosc.dispatcher import Dispatcher
-from pythonosc.osc_server import BlockingOSCUDPServer
-
-
-def print_handler(address, *args):
-    print(f"{address}: {args}")
-
-
-def default_handler(address, *args):
-    print(f"DEFAULT {address}: {args}")
-    if address == "/task":
-        Thread(target=runTask).start()
-    
-dispatcher = Dispatcher()
-dispatcher.map("/something/*", print_handler)
-dispatcher.set_default_handler(default_handler)
-
-ip = ""
-port = 1337
-
-server = BlockingOSCUDPServer((ip, port), dispatcher)
-print("Ready")
 runTask()
-#server.serve_forever()  # Blocks forever
-print("End")
